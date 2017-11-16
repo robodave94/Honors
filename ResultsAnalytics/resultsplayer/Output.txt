@@ -1,0 +1,13 @@
+SingleChannelSegmentation 0.00285753567659
+GridSingleChannelScanline 0.00552293305518
+VerticalSingleChannelScanline 0.0042910462223
+HorizontalSingleChannelScanline 0.0012212692736
+HorizontalFieldSupression 0.00512957534814
+RGBChannelSegmentation 0.00341503023708
+GridRGBChannelScanline 0.00943575748922
+VerticalRGBChannelScanline 0.0078332670516
+HorizontalRGBChannelScanline 0.00171869074167
+ClusteringTime 0.00096002790473
+FieldSupression 0.183851244468
+HoGTime 0.00124291941982
+CNN_Time 0.00297955242553

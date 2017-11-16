@@ -1,0 +1,2 @@
+model_checkpoint_path: "ballmodel-19999"
+all_model_checkpoint_paths: "ballmodel-19999"

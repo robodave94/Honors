@@ -1,0 +1,33 @@
+# import the necessary packages
+import numpy as np
+import cv2
+import sys
+import math
+import time
+import scipy.misc
+
+
+im1 = cv2.imread("field2.png")
+im2 = cv2.imread("field2.png")
+size = im1.shape
+
+upperBGR=[im1[0][0][0],im1[0][0][1],im1[0][0][2]]
+lowerBGR=[im1[0][0][0],im1[0][0][1],im1[0][0][2]]
+for y in range(0, size[0]):
+	for x in range(0, size[1]):
+		#printing at BGR		print im1[y][x]
+		if upperBGR[0]<im1[y][x][0]:
+			upperBGR[0]=im1[y][x][0]
+		if upperBGR[1]<im1[y][x][1]:
+			upperBGR[1]=im1[y][x][1]
+		if upperBGR[2]<im1[y][x][2]:
+			upperBGR[2]=im1[y][x][2]
+		if lowerBGR[0]>im1[y][x][0]:
+			lowerBGR[0]=im1[y][x][0]
+		if lowerBGR[1]>im1[y][x][1]:
+			lowerBGR[1]=im1[y][x][1]
+		if lowerBGR[2]>im1[y][x][2]:
+			lowerBGR[2]=im1[y][x][2]
+		
+print upperBGR
+print lowerBGR

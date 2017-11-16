@@ -1,0 +1,94 @@
+import numpy as np
+import cv2
+import goalScanLines_Candidates as SL
+import goalBlobs as BB
+import goal_Classification as gC
+
+
+def loopexmination(colorScheme,candidate,csvFile,count):
+    ary=''
+    msk,time=SL.binary_colorSegmentation_GenericSingle(candidate,colorScheme[0],colorScheme[1])#Single Channel Segmentation
+    gaussV = ScanFunc(msk, candidate)
+    ary +=repr(time)+','+str(gaussV[0])+','+str(gaussV[1])+','
+    msk,time=SL.binary_colorSegGrid(candidate, colorScheme[0], colorScheme[1])#Grid Single Channel Scanline
+    gaussV = ScanFunc(msk, candidate)
+    ary += repr(time) + ',' + str(gaussV[0]) + ',' + str(gaussV[1]) + ','
+    msk,time=SL.binary_getVerticalScanLines_buildMaskSingleImage(candidate, colorScheme[0], colorScheme[1])#Vertical Single Channel Scanline
+    gaussV = ScanFunc(msk,candidate)
+    ary += repr(time) + ',' + str(gaussV[0]) + ',' + str(gaussV[1]) + ','
+    msk,time=SL.binary_getHorizontalScanLines_buildMaskSingleImage(candidate, colorScheme[0], colorScheme[1])#Horizontal Single Channel Scanline
+    gaussV =ScanFunc(msk,candidate)
+    ary += repr(time) + ',' + str(gaussV[0]) + ',' + str(gaussV[1]) + ','
+    msk,time=SL.colorSegmentation_GenericSingle(candidate, colorScheme[0], colorScheme[1])#RGB Channel Segmentation
+    gaussV =ScanFunc(msk[:,:,2],candidate)
+    ary += repr(time) + ',' + str(gaussV[0]) + ',' + str(gaussV[1]) + ','
+    msk,time=SL.colorSegGrid(candidate, colorScheme[0], colorScheme[1])#Grid RGB Channel Scanline
+    gaussV =ScanFunc(msk[:,:,2],candidate)
+    ary += repr(time) + ',' + str(gaussV[0]) + ',' + str(gaussV[1]) + ','
+    msk,time=SL.getVerticalScanLines_buildMaskSingleImage(candidate, colorScheme[0], colorScheme[1])#Vertical RGB Channel Scanline
+    gaussV =ScanFunc(msk[:,:,2],candidate)
+    ary += repr(time) + ',' + str(gaussV[0]) + ',' + str(gaussV[1]) + ','
+    msk,time=SL.getHorizontalScanLines_buildMaskSingleImage(candidate, colorScheme[0], colorScheme[1])#Horizontal RGB Channel Scanline
+    gaussV =ScanFunc(msk[:,:,2],candidate)
+    ary += repr(time) + ',' + str(gaussV[0]) + ',' + str(gaussV[1]) + ','+str(count)+'\n'
+    #write row to ods file
+    writeToCSV(ary,csvFile)
+    VerificationExamine(colorScheme,candidate,count)
+    return
+
+def VerificationExamine(scm,im,x):
+    q=cv2.inRange(im,np.array(scm[0],dtype="uint16"),np.array(scm[1],dtype="uint16"))
+    #Area,Classification,Speed,BlobType
+    y = BB.GoalDifferenceOfGaussians(q, im)
+    g=y[0]
+    blobtming=str(y[1])+','
+    if len(g) > 0:
+        output = gC.StatisticalRules(im, g)
+        writeToCSV('['+str(output[0][0])+' '+str(output[0][1])+' '+str(output[0][2])+' '+str(output[0][3])+']'+','+str(output[1])+','+str(output[2])+',DoG_StatAreas'+','+x+'\n','gVerificationExamination.csv')
+        output = gC.FieldPostTransition(im,g)
+        writeToCSV('['+str(output[0][0])+' '+str(output[0][1])+' '+str(output[0][2])+' '+str(output[0][3])+']' + ',' + str(output[1]) + ',' + str(output[2]) + ',DoG_FieldPostTrans' + ',' + x+'\n',
+                   'gVerificationExamination.csv')
+        output = gC.BlobLogicImplementation(im, g)
+        writeToCSV('['+str(output[0][0])+' '+str(output[0][1])+' '+str(output[0][2])+' '+str(output[0][3])+']' + ',' + str(output[1]) + ',' + str(output[2]) + ',DoG_FuzzyLogic' + ',' + x+'\n',
+                   'gVerificationExamination.csv')
+    y = BB.GoalLaplacianOfGaussians(q, im)
+    g = y[0]
+    blobtming += str(y[1])+'\n'
+    if len(g) > 0:
+        output = gC.StatisticalRules(im, g)
+        writeToCSV('['+str(output[0][0])+' '+str(output[0][1])+' '+str(output[0][2])+' '+str(output[0][3])+']'+','+str(output[1])+','+str(output[2])+',Lap_StatAreas'+','+x+'\n','gVerificationExamination.csv')
+        output = gC.FieldPostTransition(im,g)
+        writeToCSV('['+str(output[0][0])+' '+str(output[0][1])+' '+str(output[0][2])+' '+str(output[0][3])+']'+ ',' + str(output[1]) + ',' + str(output[2]) + ',Lap_FieldPostTrans' + ',' + x+'\n',
+                   'gVerificationExamination.csv')
+        output = gC.BlobLogicImplementation(im, g)
+        writeToCSV('['+str(output[0][0])+' '+str(output[0][1])+' '+str(output[0][2])+' '+str(output[0][3])+']' + ',' + str(output[1]) + ',' + str(output[2]) + ',Lap_FuzzyLogic' + ',' + x+'\n',
+                   'gVerificationExamination.csv')
+    writeToCSV(blobtming,'gBlobTiming.csv')
+    return
+
+def writeToCSV(string,odsFile):
+    fd = open(odsFile, 'a')
+    fd.write(string)
+    fd.close()
+    return
+
+def ScanFunc(mask,cndt):
+    return len(BB.GoalDifferenceOfGaussians(mask,cndt)[0]),len(BB.GoalLaplacianOfGaussians(mask,cndt)[0])
+
+
+yellowgoalHSV = [0, 0, 40],[45,256,256]
+def RunExamination():
+    count = 0
+    #cnt=3125
+    #../../Data/Frames/
+    import glob,os
+    dataset = glob.glob(os.path.join('AnalysisData/', '*.jpg'))
+    for x in dataset:
+        #print x
+        loopexmination(yellowgoalHSV, cv2.cvtColor(cv2.imread(x),cv2.COLOR_BGR2HSV), 'gPreprocessingSegmentation.csv', x)
+        count+=1
+        print count
+    return
+
+
+RunExamination()

@@ -1,0 +1,32 @@
+import tensorflow as tf
+import cv2
+import numpy as np
+image_size=40
+num_channels=3
+saver = tf.train.import_meta_graph('ballmodel-999.meta')
+sess = tf.Session()
+saver.restore(sess, tf.train.latest_checkpoint('./'))
+image = cv2.imread('ball1.png')
+# Resizing the image to our desired size and
+# preprocessing will be done exactly as done during training
+images=[]
+image = cv2.resize(image, (image_size, image_size))
+images.append(image)
+images = np.array(images, dtype=np.uint8)
+images = images.astype('float32')
+images = np.multiply(images, 1.0/255.0) 
+#The input to the network is of shape [None image_size image_size num_channels]. Hence we reshape.
+x_batch = images.reshape(1, image_size,image_size,num_channels)
+ 
+ 
+graph = tf.get_default_graph()
+y_pred = graph.get_tensor_by_name("y_pred:0")
+ 
+## Let's feed the images to the input placeholders
+x= graph.get_tensor_by_name("x:0")
+y_true = graph.get_tensor_by_name("y_true:0") 
+y_test_images = np.zeros((1, 2)) 
+ 
+feed_dict_testing = {x: x_batch, y_true: y_test_images}
+result=sess.run(y_pred, feed_dict=feed_dict_testing)
+print result

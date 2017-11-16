@@ -1,0 +1,152 @@
+Goal Area,Classification,Time,Tag,Frame
+
+[275 200 602 251],Complete Goal,0.00135707855225,DoG_StatAreas,AnalysisData/frame196.jpg
+[576 166 0 259],Partial Goal,0.0231630802155,DoG_FieldPostTrans,AnalysisData/frame196.jpg
+[275 196 602 259],Complete Goal,0.00154495239258,DoG_FuzzyLogic,AnalysisData/frame196.jpg
+[273 441 607 -223],Error in Detection,0.00315594673157,Lap_StatAreas,AnalysisData/frame196.jpg
+[574 307 297 60],Partial Goal,0.0127210617065,Lap_FieldPostTrans,AnalysisData/frame196.jpg
+[826 441 54 13],Partial Goal,9.70363616943e-05,Lap_FuzzyLogic,AnalysisData/frame196.jpg
+[416 174 205 81],Complete Goal,0.000207901000977,DoG_StatAreas,AnalysisData/frame1644.jpg
+[464 153 0 101],Partial Goal,0.0129330158234,DoG_FieldPostTrans,AnalysisData/frame1644.jpg
+[416 164 97 101],Complete Goal,0.000163078308105,DoG_FuzzyLogic,AnalysisData/frame1644.jpg
+[1116 178 131 84],Partial Goal,0.000153779983521,DoG_StatAreas,AnalysisData/frame78.jpg
+[1130 168 51 95],Complete Goal,0.00594902038574,DoG_FieldPostTrans,AnalysisData/frame78.jpg
+[1116 171 131 95],Partial Goal,0.000164985656738,DoG_FuzzyLogic,AnalysisData/frame78.jpg
+[662 230 258 92],Complete Goal,0.000266075134277,DoG_StatAreas,AnalysisData/frame238.jpg
+[-1 -1 -1 -1],Error in Calculation,0.00381803512573,DoG_FieldPostTrans,AnalysisData/frame238.jpg
+[662 223 258 105],Complete Goal,0.000307083129883,DoG_FuzzyLogic,AnalysisData/frame238.jpg
+[664 283 254 31],Complete Goal,0.000123977661133,Lap_StatAreas,AnalysisData/frame238.jpg
+[-1 -1 -1 -1],Error in Calculation,0.00114488601685,Lap_FieldPostTrans,AnalysisData/frame238.jpg
+[899 283 19 32],Complete Goal,5.10215759277e-05,Lap_FuzzyLogic,AnalysisData/frame238.jpg
+[321 240 32 78],Partial Goal,7.79628753662e-05,DoG_StatAreas,AnalysisData/frame450.jpg
+[337 233 0 86],Partial Goal,0.00603604316711,DoG_FieldPostTrans,AnalysisData/frame450.jpg
+[321 236 32 86],Partial Goal,8.20159912109e-05,DoG_FuzzyLogic,AnalysisData/frame450.jpg
+[1104 228 143 182],Partial Goal,0.000285148620605,DoG_StatAreas,AnalysisData/frame2859.jpg
+[1127 200 48 196],Complete Goal,0.0130879878998,DoG_FieldPostTrans,AnalysisData/frame2859.jpg
+[1104 218 143 196],Complete Goal,0.000398874282837,DoG_FuzzyLogic,AnalysisData/frame2859.jpg
+[1102 395 145 -121],Error in Detection,6.38961791992e-05,Lap_StatAreas,AnalysisData/frame2859.jpg
+[-1 -1 -1 -1],Error in Calculation,0.00210618972778,Lap_FieldPostTrans,AnalysisData/frame2859.jpg
+[1104 219 143 55],Complete Goal,0.000134229660034,Lap_FuzzyLogic,AnalysisData/frame2859.jpg
+[708 122 301 106],Complete Goal,0.000340938568115,DoG_StatAreas,AnalysisData/frame2387.jpg
+[858 96 0 129],Partial Goal,0.012228012085,DoG_FieldPostTrans,AnalysisData/frame2387.jpg
+[708 111 301 129],Complete Goal,0.000452041625977,DoG_FuzzyLogic,AnalysisData/frame2387.jpg
+[711 180 20 29],Partial Goal,4.79221343994e-05,Lap_StatAreas,AnalysisData/frame2387.jpg
+[711 180 20 29],Partial Goal,4.88758087158e-05,Lap_FieldPostTrans,AnalysisData/frame2387.jpg
+[711 180 20 29],Partial Goal,4.38690185547e-05,Lap_FuzzyLogic,AnalysisData/frame2387.jpg
+[427 182 181 64],Complete Goal,0.000162124633789,DoG_StatAreas,AnalysisData/frame1658.jpg
+[442 132 0 85],Partial Goal,0.0111260414124,DoG_FieldPostTrans,AnalysisData/frame1658.jpg
+[427 170 30 85],Partial Goal,9.20295715332e-05,DoG_FuzzyLogic,AnalysisData/frame1658.jpg
+[1 4 326 202],Complete Goal,0.000680923461914,DoG_StatAreas,AnalysisData/frame595.jpg
+[1 4 326 202],Complete Goal,0.000671863555908,DoG_FieldPostTrans,AnalysisData/frame595.jpg
+[1 4 326 202],Complete Goal,0.000656127929688,DoG_FuzzyLogic,AnalysisData/frame595.jpg
+[726 157 213 129],Complete Goal,0.00034499168396,DoG_StatAreas,AnalysisData/frame877.jpg
+[832 121 0 165],Partial Goal,0.0159659385681,DoG_FieldPostTrans,AnalysisData/frame877.jpg
+[726 144 213 165],Complete Goal,0.00042200088501,DoG_FuzzyLogic,AnalysisData/frame877.jpg
+[660 287 281 -119],Error in Detection,7.10487365723e-05,Lap_StatAreas,AnalysisData/frame877.jpg
+[-1 -1 -1 -1],Error in Calculation,0.000939846038818,Lap_FieldPostTrans,AnalysisData/frame877.jpg
+[660 287 101 23],Partial Goal,8.60691070557e-05,Lap_FuzzyLogic,AnalysisData/frame877.jpg
+[1 11 97 194],Complete Goal,0.000237941741943,DoG_StatAreas,AnalysisData/frame628.jpg
+[1 11 97 194],Complete Goal,0.000227928161621,DoG_FieldPostTrans,AnalysisData/frame628.jpg
+[1 11 97 194],Complete Goal,0.00021505355835,DoG_FuzzyLogic,AnalysisData/frame628.jpg
+[13 134 88 73],Partial Goal,0.000102996826172,Lap_StatAreas,AnalysisData/frame628.jpg
+[13 134 88 73],Partial Goal,0.000123977661133,Lap_FieldPostTrans,AnalysisData/frame628.jpg
+[13 134 88 73],Partial Goal,9.79900360107e-05,Lap_FuzzyLogic,AnalysisData/frame628.jpg
+[1022 1 225 149],Complete Goal,0.000363111495972,DoG_StatAreas,AnalysisData/frame2272.jpg
+[1022 1 225 149],Complete Goal,0.000385999679565,DoG_FieldPostTrans,AnalysisData/frame2272.jpg
+[1022 1 225 149],Partial Goal,0.000388145446777,DoG_FuzzyLogic,AnalysisData/frame2272.jpg
+[1019 128 54 24],Partial Goal,5.60283660889e-05,Lap_StatAreas,AnalysisData/frame2272.jpg
+[1019 128 54 24],Partial Goal,8.01086425781e-05,Lap_FieldPostTrans,AnalysisData/frame2272.jpg
+[1019 128 54 24],Partial Goal,5.00679016113e-05,Lap_FuzzyLogic,AnalysisData/frame2272.jpg
+[1 8 244 215],Complete Goal,0.000493049621582,DoG_StatAreas,AnalysisData/frame603.jpg
+[1 8 244 215],Complete Goal,0.000525951385498,DoG_FieldPostTrans,AnalysisData/frame603.jpg
+[1 8 244 215],Complete Goal,0.000622987747192,DoG_FuzzyLogic,AnalysisData/frame603.jpg
+[157 126 89 31],Partial Goal,7.20024108887e-05,Lap_StatAreas,AnalysisData/frame603.jpg
+[157 126 89 31],Partial Goal,8.79764556885e-05,Lap_FieldPostTrans,AnalysisData/frame603.jpg
+[157 126 89 31],Partial Goal,6.50882720947e-05,Lap_FuzzyLogic,AnalysisData/frame603.jpg
+[801 181 138 75],Partial Goal,0.000159025192261,DoG_StatAreas,AnalysisData/frame130.jpg
+[870 160 0 94],Partial Goal,0.00534296035767,DoG_FieldPostTrans,AnalysisData/frame130.jpg
+[801 167 138 94],Complete Goal,0.000171184539795,DoG_FuzzyLogic,AnalysisData/frame130.jpg
+[913 234 37 28],Partial Goal,5.3882598877e-05,Lap_StatAreas,AnalysisData/frame130.jpg
+[913 234 37 28],Partial Goal,8.58306884766e-05,Lap_FieldPostTrans,AnalysisData/frame130.jpg
+[913 234 37 28],Partial Goal,4.79221343994e-05,Lap_FuzzyLogic,AnalysisData/frame130.jpg
+[275 200 602 251],Complete Goal,0.00144791603088,DoG_StatAreas,AnalysisData/frame196.jpg
+[576 166 0 259],Partial Goal,0.0169599056244,DoG_FieldPostTrans,AnalysisData/frame196.jpg
+[275 196 602 259],Complete Goal,0.00146222114563,DoG_FuzzyLogic,AnalysisData/frame196.jpg
+[273 441 607 -223],Error in Detection,0.000108003616333,Lap_StatAreas,AnalysisData/frame196.jpg
+[574 307 297 60],Partial Goal,0.011910200119,Lap_FieldPostTrans,AnalysisData/frame196.jpg
+[826 441 54 13],Partial Goal,0.000123977661133,Lap_FuzzyLogic,AnalysisData/frame196.jpg
+[416 174 205 81],Complete Goal,0.000207901000977,DoG_StatAreas,AnalysisData/frame1644.jpg
+[464 153 0 101],Partial Goal,0.0129759311676,DoG_FieldPostTrans,AnalysisData/frame1644.jpg
+[416 164 97 101],Complete Goal,0.000195980072021,DoG_FuzzyLogic,AnalysisData/frame1644.jpg
+[1116 178 131 84],Partial Goal,0.000152111053467,DoG_StatAreas,AnalysisData/frame78.jpg
+[1130 168 51 95],Complete Goal,0.006108045578,DoG_FieldPostTrans,AnalysisData/frame78.jpg
+[1116 171 131 95],Partial Goal,0.000200986862183,DoG_FuzzyLogic,AnalysisData/frame78.jpg
+[662 230 258 92],Complete Goal,0.000281810760498,DoG_StatAreas,AnalysisData/frame238.jpg
+[-1 -1 -1 -1],Error in Calculation,0.0037829875946,DoG_FieldPostTrans,AnalysisData/frame238.jpg
+[662 223 258 105],Complete Goal,0.000328063964844,DoG_FuzzyLogic,AnalysisData/frame238.jpg
+[664 283 254 31],Complete Goal,0.000123977661133,Lap_StatAreas,AnalysisData/frame238.jpg
+[-1 -1 -1 -1],Error in Calculation,0.00117802619934,Lap_FieldPostTrans,AnalysisData/frame238.jpg
+[899 283 19 32],Complete Goal,5.10215759277e-05,Lap_FuzzyLogic,AnalysisData/frame238.jpg
+[321 240 32 78],Partial Goal,7.89165496826e-05,DoG_StatAreas,AnalysisData/frame450.jpg
+[337 233 0 86],Partial Goal,0.00586199760437,DoG_FieldPostTrans,AnalysisData/frame450.jpg
+[321 236 32 86],Partial Goal,8.20159912109e-05,DoG_FuzzyLogic,AnalysisData/frame450.jpg
+[1104 228 143 182],Partial Goal,0.000298023223877,DoG_StatAreas,AnalysisData/frame2859.jpg
+[1127 200 48 196],Complete Goal,0.0119879245758,DoG_FieldPostTrans,AnalysisData/frame2859.jpg
+[1104 218 143 196],Complete Goal,0.000336885452271,DoG_FuzzyLogic,AnalysisData/frame2859.jpg
+[1102 395 145 -121],Error in Detection,6.60419464111e-05,Lap_StatAreas,AnalysisData/frame2859.jpg
+[-1 -1 -1 -1],Error in Calculation,0.00215601921082,Lap_FieldPostTrans,AnalysisData/frame2859.jpg
+[1104 219 143 55],Complete Goal,0.000164985656738,Lap_FuzzyLogic,AnalysisData/frame2859.jpg
+[708 122 301 106],Complete Goal,0.000418901443481,DoG_StatAreas,AnalysisData/frame2387.jpg
+[858 96 0 129],Partial Goal,0.0123221874237,DoG_FieldPostTrans,AnalysisData/frame2387.jpg
+[708 111 301 129],Complete Goal,0.000477075576782,DoG_FuzzyLogic,AnalysisData/frame2387.jpg
+[711 180 20 29],Partial Goal,4.79221343994e-05,Lap_StatAreas,AnalysisData/frame2387.jpg
+[711 180 20 29],Partial Goal,7.89165496826e-05,Lap_FieldPostTrans,AnalysisData/frame2387.jpg
+[711 180 20 29],Partial Goal,5.41210174561e-05,Lap_FuzzyLogic,AnalysisData/frame2387.jpg
+[427 182 181 64],Complete Goal,0.000191926956177,DoG_StatAreas,AnalysisData/frame1658.jpg
+[442 132 0 85],Partial Goal,0.017196893692,DoG_FieldPostTrans,AnalysisData/frame1658.jpg
+[427 170 30 85],Partial Goal,0.000131845474243,DoG_FuzzyLogic,AnalysisData/frame1658.jpg
+[1 4 326 202],Complete Goal,0.000672817230225,DoG_StatAreas,AnalysisData/frame595.jpg
+[1 4 326 202],Complete Goal,0.000685930252075,DoG_FieldPostTrans,AnalysisData/frame595.jpg
+[1 4 326 202],Complete Goal,0.000663995742798,DoG_FuzzyLogic,AnalysisData/frame595.jpg
+[726 157 213 129],Complete Goal,0.000309944152832,DoG_StatAreas,AnalysisData/frame877.jpg
+[832 121 0 165],Partial Goal,0.0156061649323,DoG_FieldPostTrans,AnalysisData/frame877.jpg
+[726 144 213 165],Complete Goal,0.00044322013855,DoG_FuzzyLogic,AnalysisData/frame877.jpg
+[660 287 281 -119],Error in Detection,6.60419464111e-05,Lap_StatAreas,AnalysisData/frame877.jpg
+[-1 -1 -1 -1],Error in Calculation,0.000938892364502,Lap_FieldPostTrans,AnalysisData/frame877.jpg
+[660 287 101 23],Partial Goal,0.000133991241455,Lap_FuzzyLogic,AnalysisData/frame877.jpg
+[1 11 97 194],Complete Goal,0.000223159790039,DoG_StatAreas,AnalysisData/frame628.jpg
+[1 11 97 194],Complete Goal,0.000226974487305,DoG_FieldPostTrans,AnalysisData/frame628.jpg
+[1 11 97 194],Complete Goal,0.000261068344116,DoG_FuzzyLogic,AnalysisData/frame628.jpg
+[13 134 88 73],Partial Goal,0.000105142593384,Lap_StatAreas,AnalysisData/frame628.jpg
+[13 134 88 73],Partial Goal,0.000127077102661,Lap_FieldPostTrans,AnalysisData/frame628.jpg
+[13 134 88 73],Partial Goal,0.000103950500488,Lap_FuzzyLogic,AnalysisData/frame628.jpg
+[1022 1 225 149],Complete Goal,0.000346899032593,DoG_StatAreas,AnalysisData/frame2272.jpg
+[1022 1 225 149],Complete Goal,0.000385999679565,DoG_FieldPostTrans,AnalysisData/frame2272.jpg
+[1022 1 225 149],Partial Goal,0.000337839126587,DoG_FuzzyLogic,AnalysisData/frame2272.jpg
+[1019 128 54 24],Partial Goal,5.50746917725e-05,Lap_StatAreas,AnalysisData/frame2272.jpg
+[1019 128 54 24],Partial Goal,7.20024108887e-05,Lap_FieldPostTrans,AnalysisData/frame2272.jpg
+[1019 128 54 24],Partial Goal,4.79221343994e-05,Lap_FuzzyLogic,AnalysisData/frame2272.jpg
+[1 8 244 215],Complete Goal,0.00071907043457,DoG_StatAreas,AnalysisData/frame603.jpg
+[1 8 244 215],Complete Goal,0.000815868377686,DoG_FieldPostTrans,AnalysisData/frame603.jpg
+[1 8 244 215],Complete Goal,0.00079083442688,DoG_FuzzyLogic,AnalysisData/frame603.jpg
+[157 126 89 31],Partial Goal,7.00950622559e-05,Lap_StatAreas,AnalysisData/frame603.jpg
+[157 126 89 31],Partial Goal,9.29832458496e-05,Lap_FieldPostTrans,AnalysisData/frame603.jpg
+[157 126 89 31],Partial Goal,7.70092010498e-05,Lap_FuzzyLogic,AnalysisData/frame603.jpg
+[801 181 138 75],Partial Goal,0.000144004821777,DoG_StatAreas,AnalysisData/frame130.jpg
+[870 160 0 94],Partial Goal,0.00502991676331,DoG_FieldPostTrans,AnalysisData/frame130.jpg
+[801 167 138 94],Complete Goal,0.000172138214111,DoG_FuzzyLogic,AnalysisData/frame130.jpg
+[913 234 37 28],Partial Goal,7.00950622559e-05,Lap_StatAreas,AnalysisData/frame130.jpg
+[913 234 37 28],Partial Goal,9.89437103271e-05,Lap_FieldPostTrans,AnalysisData/frame130.jpg
+[913 234 37 28],Partial Goal,5.60283660889e-05,Lap_FuzzyLogic,AnalysisData/frame130.jpg
+[783 233 105 82],Partial Goal,0.000209093093872,DoG_StatAreas,AnalysisData/frame37.jpg
+[835 222 0 92],Partial Goal,0.00986695289612,DoG_FieldPostTrans,AnalysisData/frame37.jpg
+[783 228 105 92],Partial Goal,0.000256061553955,DoG_FuzzyLogic,AnalysisData/frame37.jpg
+[32 243 213 71],Complete Goal,0.000193119049072,DoG_StatAreas,AnalysisData/frame425.jpg
+[42 226 193 88],Complete Goal,0.0110080242157,DoG_FieldPostTrans,AnalysisData/frame425.jpg
+[32 235 21 88],Complete Goal,8.48770141602e-05,DoG_FuzzyLogic,AnalysisData/frame425.jpg
+[1 11 97 195],Complete Goal,0.000232934951782,DoG_StatAreas,AnalysisData/frame620.jpg
+[1 11 97 195],Complete Goal,0.00023889541626,DoG_FieldPostTrans,AnalysisData/frame620.jpg
+[1 11 97 195],Complete Goal,0.000223875045776,DoG_FuzzyLogic,AnalysisData/frame620.jpg
+[58 178 43 30],Partial Goal,5.3882598877e-05,Lap_StatAreas,AnalysisData/frame620.jpg
+[58 178 43 30],Partial Goal,7.10487365723e-05,Lap_FieldPostTrans,AnalysisData/frame620.jpg
+[58 178 43 30],Partial Goal,5.41210174561e-05,Lap_FuzzyLogic,AnalysisData/frame620.jpg

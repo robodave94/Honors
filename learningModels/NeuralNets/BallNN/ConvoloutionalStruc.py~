@@ -1,0 +1,18 @@
+import tensorflow as tf
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.metrics import confusion_matrix
+import time
+from datetime import timedelta
+import math
+import positive_images.createimages as positiveMix
+import negative_images.negativeClient as negGen
+import glob,os
+from PIL import Image
+
+positiveMix.mixDataSet()
+negGen.runNegGen()
+testPosList = glob.glob(os.path.join('data/validate/ball/','*.png'))
+trainPosList= glob.glob(os.path.join('data/train/ball/','*.png'))
+testNegList = glob.glob(os.path.join('data/validate/nonBall/','*.png'))
+trainNegList= glob.glob(os.path.join('data/train/nonBall/','*.png'))
